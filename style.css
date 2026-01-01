@@ -1058,10 +1058,12 @@ a {
 
 .about-main-image {
     width: 100%;
-    max-width: 400px;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    border-radius: 50%;
+    height: 600px;  /* Fixed height */
+    object-fit: cover;  /* Prevents stretching */
+    object-position: center;  /* Centers the image */
+    border-radius: 20px;
+    border: 5px solid var(--primary);
+    box-shadow: 0 10px 40px rgba(255, 0, 0, 0.3);
 }
 
 .about-role {
