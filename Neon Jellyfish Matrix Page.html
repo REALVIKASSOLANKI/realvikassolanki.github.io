@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon | Vikas Solanki</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Modern Fonts: Inter for text, Fira Code for that IT/Programming feel -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            /* Jellyfish Theme Deep Background */
+            background-color: #0d0f19;
+            font-family: 'Inter', sans-serif;
+            color: #ffffff;
+        }
+
+        .font-code {
+            font-family: 'Fira Code', monospace;
+        }
+
+        /* Glassmorphism Capsule for Dark Mode */
+        .glass-capsule {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            box-shadow: 0 4px 30px rgba(0, 229, 255, 0.1);
+            transition: transform 0.2s cubic-bezier(0.25, 1, 0.5, 1), background-color 0.3s, box-shadow 0.3s;
+        }
+        
+        .glass-capsule:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(0, 229, 255, 0.5); /* Neon Cyan border on hover */
+            box-shadow: 0 0 20px rgba(0, 229, 255, 0.4);
+        }
+
+        /* Neon Glow Text Effects */
+        .neon-cyan {
+            text-shadow: 0 0 10px rgba(0, 229, 255, 0.7), 0 0 20px rgba(0, 229, 255, 0.5);
+            color: #00E5FF;
+        }
+        
+        .neon-pink {
+            text-shadow: 0 0 10px rgba(255, 0, 127, 0.7);
+            color: #FF007F;
+        }
+
+        .neon-yellow-highlight {
+            color: #FFFB00;
+            text-shadow: 0 0 15px rgba(255, 251, 0, 0.6);
+            background: rgba(255, 251, 0, 0.1);
+            padding: 0 6px;
+            border-radius: 4px;
+            border: 1px solid rgba(255, 251, 0, 0.3);
+        }
+    </style>
+</head>
+<body class="relative min-h-screen w-full overflow-hidden flex items-center justify-center selection:bg-[#FF007F] selection:text-white">
+
+    <!-- 4K Canvas Matrix Background -->
+    <canvas id="matrix-canvas" class="absolute inset-0 z-0 w-full h-full"></canvas>
+
+    <!-- Top Right Instagram Link (Glassmorphism Capsule) -->
+    <a href="https://instagram.com/realvikassolanki" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       id="ig-capsule"
+       class="glass-capsule fixed top-5 right-5 sm:top-8 sm:right-8 flex items-center gap-3 px-4 py-2 sm:px-6 sm:py-3 rounded-full z-50 group cursor-pointer">
+        
+        <div class="bg-gradient-to-tr from-[#FF007F] to-[#00E5FF] text-white p-1.5 sm:p-2 rounded-full group-hover:scale-110 transition-transform duration-300 shadow-[0_0_10px_rgba(255,0,127,0.5)]">
+            <!-- Instagram SVG Icon -->
+            <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" />
+            </svg>
+        </div>
+        <span class="font-code font-semibold text-sm sm:text-base tracking-wide text-white">@realvikassolanki</span>
+    </a>
+
+    <!-- Centered Content Wrapper with Glass effect for readability -->
+    <main class="relative z-10 flex flex-col items-center justify-center text-center px-6 py-12 w-full max-w-4xl capitalize glass-capsule !bg-black/30 rounded-3xl mx-4 sm:mx-auto">
+        
+        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-4 neon-cyan">
+            Under Construction
+        </h1>
+        
+        <h2 class="text-2xl md:text-3xl font-semibold mb-8 neon-pink">
+            Building Something New
+        </h2>
+        
+        <p class="text-lg md:text-xl text-gray-300 font-medium max-w-2xl leading-relaxed">
+            I Am Currently <span class="font-bold neon-yellow-highlight">Updating My Website</span>. Connect With Me <span class="text-white font-code bg-white/10 px-2 py-1 rounded">@realvikassolanki</span> Across Platforms In The Meantime.
+        </p>
+
+    </main>
+
+    <!-- JavaScript for Matrix Background & Interactions -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // --- 1. Magnetic Hover Effect for Capsule ---
+            const capsule = document.getElementById('ig-capsule');
+            if (window.matchMedia("(pointer: fine)").matches) {
+                capsule.addEventListener('mousemove', (e) => {
+                    const rect = capsule.getBoundingClientRect();
+                    const x = e.clientX - rect.left - rect.width / 2;
+                    const y = e.clientY - rect.top - rect.height / 2;
+                    capsule.style.transform = `translate(${x * 0.25}px, ${y * 0.25}px)`;
+                });
+                capsule.addEventListener('mouseleave', () => {
+                    capsule.style.transform = 'translate(0px, 0px)';
+                });
+            }
+
+            // --- 2. Custom Jellyfish Theme Matrix Canvas ---
+            const canvas = document.getElementById('matrix-canvas');
+            const ctx = canvas.getContext('2d');
+
+            // Responsive Canvas Setup
+            let width, height, columns;
+            const fontSize = 16;
+            let drops = [];
+
+            function resizeCanvas() {
+                width = window.innerWidth;
+                height = window.innerHeight;
+                canvas.width = width;
+                canvas.height = height;
+                columns = Math.floor(width / fontSize) + 1;
+                drops = [];
+                for (let x = 0; x < columns; x++) {
+                    drops[x] = Math.random() * height; // Start at random heights
+                }
+            }
+            
+            window.addEventListener('resize', resizeCanvas);
+            resizeCanvas();
+
+            // Characters and Jellyfish Palette Colors (Cyan, Pink, Purple)
+            const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%^&*()_+{}|:"<>?~`-=[]\',./\\';
+            const colors = ['#00E5FF', '#FF007F', '#B400FF', '#00E5FF']; // Extra Cyan for balance
+
+            function drawMatrix() {
+                // Creates the trailing fade effect. #0d0f19 is the Jellyfish dark background
+                ctx.fillStyle = 'rgba(13, 15, 25, 0.1)';
+                ctx.fillRect(0, 0, width, height);
+
+                ctx.font = fontSize + 'px "Fira Code", monospace';
+
+                for (let i = 0; i < drops.length; i++) {
+                    // Pick random character
+                    const text = characters.charAt(Math.floor(Math.random() * characters.length));
+                    
+                    // Pick random neon color from the theme
+                    ctx.fillStyle = colors[Math.floor(Math.random() * colors.length)];
+                    
+                    // Draw the character
+                    ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+
+                    // Reset drop to top randomly to create the varying rain effect
+                    if (drops[i] * fontSize > height && Math.random() > 0.975) {
+                        drops[i] = 0;
+                    }
+
+                    // Move drop down
+                    drops[i]++;
+                }
+            }
+
+            // Run the animation loop at ~30 FPS for a cinematic look
+            setInterval(drawMatrix, 45);
+        });
+    </script>
+</body>
+</html>
